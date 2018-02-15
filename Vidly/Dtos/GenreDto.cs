@@ -4,15 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Vidly.Models
+namespace Vidly.Dtos
 {
-    public class Genre
+    public class GenreDto
     {
         public byte Id { get; set; }
-
-        [Required]
-        [StringLength(255)]
+        
         public string Name { get; set; }
-
     }
 }
